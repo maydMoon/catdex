@@ -1,1 +1,20 @@
-<p>list works!</p>
+<div class="owl-carousel owl-theme">
+  <div class="item" *ngFor="let data of resource; let i = index">
+    <mat-grid-list
+      cols="3"
+      rowHeight="3:1"
+      class="carousel-data"
+      (click)="showdata()"
+    >
+      <a class="gatos">
+        <section class="image">
+          <img src="assets/icons/cat.svg" alt="icon gato" style="width: 50%" />
+        </section>
+
+        <section class="name">
+          <h2>Nome Gato</h2>
+        </section>
+      </a>
+    </mat-grid-list>
+  </div>
+</div>

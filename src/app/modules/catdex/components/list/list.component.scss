@@ -1,0 +1,30 @@
+$padding: 20px;
+
+:host {
+  width: 100%;
+
+  position: relative;
+  text-align: center;
+  color: black;
+
+  mat-grid-tile {
+    background: lightblue;
+  }
+
+  .name {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .gatos {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 8px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
