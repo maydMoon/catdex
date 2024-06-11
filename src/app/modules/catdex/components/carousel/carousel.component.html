@@ -1,20 +1,20 @@
-<div class="card">
-  <p-carousel
-    [value]="cats"
-    [circular]="true"
-    [autoplayInterval]="3000"
-  >
-    <ng-template let-cat pTemplate="item">
-      <div class="border-1 surface-border border-round m-2 p-3">
-        <div class="mb-3">
-          <div class="relative mx-auto">
-            <img [src]="cat.image" alt="Foto de gato" style="width: 30%" />
-          </div>
-        </div>
-        <div class="mb-3 font-medium">
-          <p>GATO</p>
+<p-carousel
+  [value]="cats"
+  [numVisible]="3"
+  [numScroll]="3"
+  [circular]="true"
+  autoplayInterval="3000"
+>
+  <ng-template let-cat pTemplate="item">
+    <div class="border-1 surface-border border-round m-2 p-3">
+      <div class="mb-3">
+        <div class="relative mx-auto">
+          <img [src]="cat.image" [alt]="cat.name" class="w-full border-round" />
         </div>
       </div>
-    </ng-template>
-  </p-carousel>
-</div>
+      <div class="mb-3 font-large">
+        {{ cat.name }}
+      </div>
+    </div>
+  </ng-template>
+</p-carousel>

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+
+import { CCatBreed } from '../../const/CCatBreed';
+
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
@@ -11,10 +14,5 @@ import { TagModule } from 'primeng/tag';
   styleUrl: './carousel.component.scss',
 })
 export class CarouselComponent {
-  cats = [
-    { image: 'assets/icons/search.svg' },
-    { image: 'assets/icons/paw.svg' },
-    { image: 'assets/icons/link.svg' },
-    { image: 'assets/icons/cat.svg' },
-  ];
+  cats = CCatBreed;
 }
